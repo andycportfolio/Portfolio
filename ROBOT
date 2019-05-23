@@ -1,0 +1,49 @@
+//initializations
+#include <linkbot.h>
+
+string_t answer;
+string_t L;
+
+double speed = 2.5; // speed of the robot
+double r = 1.75; // the radius of the robot's wheels
+
+
+CLinkbotI a; //the robot
+CLinkbotI b;
+CLinkbotI c;
+
+printf("the letter that bot 1 needs to go in\n"); // displays the message
+scanf("%s", &answer); //allows you to input an answer
+
+
+if(answer == "M") { // this portion of the code runs if user types the letter "M"
+    a.setSpeed(speed, r); // sets speed
+    a.driveDistance(12, 2); // drives forward
+    a.turnLeft(90, 1.75, 3.69); // turns left
+    a.driveDistance(26, 2); // drives forward
+    a.turnLeft(90, 1.75, 3.69); // turns left
+    a.driveDistance(5, 1.75,); // drives forward
+    a.driveDistance(-20, 1.75); // backs up
+}
+    if(answer == "L") {
+    a.setSpeed(speed, r);
+    a.driveDistance(10.5, 2);
+    a.turnLeft(90, 1.75, 3.69);
+    a.driveDistance(29.8, 2);
+    a.turnLeft(90, 1.75, 3.69);
+    a.driveDistance(4.5, 1.75,);
+    a.driveDistance(-20, 1.75);
+    }
+    
+if(answer == "N") {
+    a.setSpeed(speed, r);
+    a.driveDistance(11, 2);
+    a.turnLeft(90, 1.75, 3.69);
+    a.driveDistance(34, 2);
+    a.turnLeft(90, 1.75, 3.69);
+    a.driveDistance(5, 1.75,);
+    a.driveDistance(-20, 1.75);
+    }
+
+
+    
